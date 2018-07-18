@@ -2,6 +2,12 @@
 function contact(first, last){
   this.firstName=first;
   this.lastName=last;
+  this.address=[];
+}
+function address(street, city, county){
+  this.street=street;
+  this.city=city
+  this.county=county
 }
 contact.prototype.fullName=function(){
   return this.firstName+" "+this.lastName;
